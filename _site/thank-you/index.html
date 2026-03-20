@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanks — JustProven | JustProven</title>
+  <meta name="description" content="We got your info. We&#39;ll be in touch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://justproven.com/thank-you/">
+  <meta property="og:title" content="Thanks — JustProven">
+  <meta property="og:description" content="We got your info. We&#39;ll be in touch.">
+  <meta property="og:site_name" content="JustProven">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thanks — JustProven">
+  <meta name="twitter:description" content="We got your info. We&#39;ll be in touch.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://justproven.com/thank-you/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f0f7ff',
+              100: '#e0effe',
+              500: '#2563eb',
+              600: '#1d4ed8',
+              700: '#1e40af',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+    .gradient-text {
+      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #f0f7ff 0%, #faf5ff 50%, #f0fdf4 100%);
+    }
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1);
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold gradient-text tracking-tight">JustProven</a>
+      <a href="#interest-form" class="bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors">
+        Get Early Access
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-16">
+    <section class="min-h-[80vh] flex items-center justify-center">
+  <div class="max-w-lg mx-auto px-6 text-center">
+    <div class="text-6xl mb-6">🎉</div>
+    <h1 class="text-4xl font-extrabold mb-4">You're on the list.</h1>
+    <p class="text-gray-500 text-lg leading-relaxed mb-8">
+      Thanks for your interest. We'll reach out personally — we actually want to hear your story and understand what's not working for you.
+    </p>
+    <a href="/" class="text-brand-600 font-semibold hover:underline">← Back to JustProven</a>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-50 border-t border-gray-100 mt-24">
+    <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+      <p class="font-semibold gradient-text text-base">JustProven</p>
+      <p>&copy; 2026 JustProven. All rights reserved.</p>
+      <a href="/privacy/" class="hover:text-gray-900 transition-colors">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll-reveal
+    (function () {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+    })();
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
