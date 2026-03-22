@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Library | JustProven</title>
+  <meta name="description" content="Internal font reference — all installed fonts with live previews">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://justproven.com/fonts-v2/">
+  <meta property="og:title" content="Font Library">
+  <meta property="og:description" content="Internal font reference — all installed fonts with live previews">
+  <meta property="og:site_name" content="JustProven">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Font Library">
+  <meta name="twitter:description" content="Internal font reference — all installed fonts with live previews">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://justproven.com/fonts-v2/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f0f7ff',
+              100: '#e0effe',
+              500: '#2563eb',
+              600: '#1d4ed8',
+              700: '#1e40af',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+    .gradient-text {
+      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #f0f7ff 0%, #faf5ff 50%, #f0fdf4 100%);
+    }
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1);
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold gradient-text tracking-tight">JustProven</a>
+      <a href="#interest-form" class="bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors">
+        Get Early Access
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-16">
+    
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <h1 class="text-4xl font-bold mb-2">Font Library</h1>
+  <p class="text-gray-500 mb-8">Internal reference — 0 fonts installed</p>
+
+  <!-- Filter bar -->
+  <div class="flex gap-2 mb-10 flex-wrap" id="filter-bar">
+    <button class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-gray-900 text-white" data-cat="all">All</button>
+    <button class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="sans">Sans</button>
+    <button class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="serif">Serif</button>
+    <button class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="display">Display</button>
+    <button class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="mono">Mono</button>
+  </div>
+
+  <div class="grid gap-8" id="font-grid">
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Albert Sans</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">geometric</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">neutral</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">balanced</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">Swiss-inspired</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Albert Sans', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Albert Sans', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Albert Sans', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: enterprise UI, body text, documentation, dashboards</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Anton</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">impact</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">heavy</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">blocky</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">attention-grabbing</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Anton', sans-serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Anton', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: headlines, social media graphics, posters, video thumbnails</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Archivo Black</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">grotesque</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">black-weight</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">dense</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">authoritative</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: headlines, protest art, bold statements, social media</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Barlow Condensed</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">condensed</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">grotesk</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">modern</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">space-efficient</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Barlow Condensed', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Barlow Condensed', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: navigation, data labels, space-tight UIs, headings</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Be Vietnam Pro</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">sharp</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">modern</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">compact</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">efficient</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Be Vietnam Pro', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Be Vietnam Pro', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Be Vietnam Pro', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: tech startups, UI design, mobile apps, headings</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Bebas Neue</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">uppercase</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">condensed</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">poster</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">iconic</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: posters, video titles, hero text, event branding</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Black Han Sans</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">Korean-inspired</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">ultra-bold</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">graphic</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">striking</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Black Han Sans', sans-serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Black Han Sans', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: Korean content, graphic design, posters, display headings</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Bodoni Moda</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">fashion</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">high-contrast</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">glamorous</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">dramatic</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Bodoni Moda', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Bodoni Moda', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Bodoni Moda', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: fashion brands, magazine covers, luxury headings, editorial</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Cabin</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">humanist</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">warm</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">rounded</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">readable</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Cabin', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Cabin', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Cabin', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: body text, nature brands, non-profits, editorial</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Cardo</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">scholarly</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">multilingual</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">detailed</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">traditional</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Cardo', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Cardo', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Cardo', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: academic publishing, multilingual text, classical references, body text</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Cormorant Garamond</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">literary</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">delicate</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">refined</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">old-world</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Cormorant Garamond', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Cormorant Garamond', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Cormorant Garamond', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: book covers, literary sites, wine labels, luxury editorial</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Crimson Text</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">academic</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">readable</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">traditional</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">scholarly</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Crimson Text', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Crimson Text', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Crimson Text', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: long-form reading, academic sites, blogs, book text</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">DM Sans</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">geometric</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">friendly</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">crisp</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">contemporary</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'DM Sans', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: branding, headings, startup sites, mobile apps</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">DM Serif Display</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">bold</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">display</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">high-contrast</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">commanding</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'DM Serif Display', sans-serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'DM Serif Display', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'DM Serif Display', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: hero headings, magazine titles, quote cards, display use only</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">EB Garamond</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">classical</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">timeless</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">bookish</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">European</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'EB Garamond', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'EB Garamond', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'EB Garamond', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: long-form text, print design, academic publishing, novels</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Exo 2</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">technical</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">futuristic</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">geometric</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">sci-fi</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Exo 2', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Exo 2', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Exo 2', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: gaming, sports, tech brands, sci-fi themes</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Figtree</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">friendly</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">round</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">open</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">warm</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Figtree', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Figtree', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: startups, community sites, SaaS, body text</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Fraunces</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">quirky</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">variable</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">playful</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">expressive</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Fraunces', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Fraunces', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Fraunces', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: craft brands, creative agencies, headings, food & beverage</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Inter</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">clean</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">neutral</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">modern</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">legible</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">versatile</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Inter', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: body text, UI, dashboards, SaaS</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Josefin Sans</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">vintage</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">geometric</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">art-deco</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">stylish</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Josefin Sans', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Josefin Sans', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: fashion headings, creative portfolios, event sites, lifestyle brands</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Karla</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">grotesque</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">quirky</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">distinctive</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">compact</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Karla', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Karla', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Karla', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: blogs, creative portfolios, indie brands, body text</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Lato</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">warm</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">stable</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">serious</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">humanist</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Lato', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: body text, corporate sites, government, finance</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Libre Baskerville</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">classical</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">authoritative</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">British</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">stately</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Libre Baskerville', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Libre Baskerville', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Libre Baskerville', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: law firms, formal letters, headings, institutional sites</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Libre Caslon Text</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">classic</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">warm</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">American-traditional</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">sturdy</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Libre Caslon Text', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Libre Caslon Text', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Libre Caslon Text', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: body text, traditional branding, book interiors, editorial</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Lora</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">calligraphic</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">flowing</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">elegant</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">screen-optimized</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Lora', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Lora', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Lora', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: blogs, editorial, storytelling, body text</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Merriweather</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">sturdy</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">readable</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">screen-optimized</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">warm</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Merriweather', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Merriweather', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Merriweather', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: body text, news sites, blogs, long-form reading</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Montserrat</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">urban</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">bold</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">versatile</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">strong</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: headings, branding, social media, video captions</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Mulish</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">minimal</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">clean</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">understated</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">versatile</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Mulish', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Mulish', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Mulish', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: body text, dashboards, reading apps, enterprise</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Nunito</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">rounded</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">soft</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">friendly</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">approachable</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Nunito', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Nunito', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: kids content, health, education, community sites</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Open Sans</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">neutral</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">ubiquitous</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">clear</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">humanist</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Open Sans', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: body text, email, cross-platform, government sites</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Oswald</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">condensed</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">tall</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">impactful</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">newspaper</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Oswald', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: headlines, banners, news sites, sports</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Outfit</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">geometric</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">clean</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">minimal</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">modern</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Outfit', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: branding, headings, tech sites, product pages</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Permanent Marker</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">handwritten</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">casual</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">marker</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">raw</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Permanent Marker', sans-serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Permanent Marker', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: annotations, callouts, youth brands, casual headers</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Playfair Display</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">elegant</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">editorial</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">high-contrast</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">classic</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Playfair Display', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Playfair Display', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Playfair Display', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: magazine headings, luxury brands, quote cards, editorial</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Plus Jakarta Sans</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">fresh</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">premium</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">crisp</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">contemporary</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Plus Jakarta Sans', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: SaaS landing pages, fintech, modern dashboards, headings</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Poppins</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">geometric</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">polished</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">balanced</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">popular</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Poppins', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: marketing sites, headings, presentations, e-commerce</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">PT Serif</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">transitional</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">balanced</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">professional</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">clear</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'PT Serif', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'PT Serif', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'PT Serif', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: news sites, government, legal documents, body text</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Raleway</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">elegant</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">thin</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">refined</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">fashion-forward</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Raleway', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Raleway', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: fashion, luxury branding, portfolios, headings</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Roboto</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">mechanical</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">clean</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">default</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">familiar</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Roboto', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: Android apps, material design, forms, body text</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Russo One</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">military</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">blocky</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">strong</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">angular</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Russo One', sans-serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Russo One', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: gaming, military themes, sports, action branding</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Sora</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">geometric</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">precise</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">futuristic</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">crisp</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Sora', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: tech brands, Web3, crypto, headings</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Source Sans 3</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">clean</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">technical</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">precise</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">readable</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Source Sans 3', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Source Sans 3', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Source Sans 3', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: documentation, admin panels, data-heavy UIs, body text</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Space Grotesk</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">techy</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">geometric</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">bold</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">futuristic</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Space Grotesk', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: tech branding, developer tools, Web3, headings</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Spectral</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">screen-first</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">modern-serif</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">crisp</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">technical</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Spectral', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Spectral', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Spectral', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: digital magazines, data storytelling, body text, research sites</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Syne</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">experimental</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">artistic</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">variable</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">eclectic</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Syne', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: art portfolios, creative agencies, music sites, experimental design</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="display">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Teko</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">display</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">narrow</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">industrial</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">mechanical</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">tall</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Teko', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Teko', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: sports branding, gaming UI, infographics, countdown timers</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Titillium Web</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">academic</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">structured</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">European</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">engineered</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Titillium Web', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Titillium Web', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: government sites, academic papers, engineering firms, EU projects</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Ubuntu</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">open-source</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">friendly</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">distinctive</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">humanist</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Ubuntu', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Ubuntu', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Ubuntu', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: open-source projects, Linux tools, developer sites, community platforms</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="sans">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Work Sans</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">sans</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">functional</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">grounded</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">balanced</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">readable</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Work Sans', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Work Sans', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Work Sans', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: body text, documentation, enterprise, editorial</p>
+    </div>
+
+    <div class="font-card border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow" data-cat="serif">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-xl font-semibold">Zilla Slab</h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">serif</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">slab-serif</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">bold</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">Mozilla-inspired</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-gray-50 text-gray-600">techy</span>
+      </div>
+      <div class="space-y-3 mb-4">
+        <p style="font-family: 'Zilla Slab', sans-serif; font-weight: 700; font-size: 1.75rem; line-height: 1.2;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: 'Zilla Slab', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6;">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump. The five boxing wizards jump quickly at dawn.</p>
+        <p style="font-family: 'Zilla Slab', sans-serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.5; color: #6b7280;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+      </div>
+      <p class="text-sm text-gray-500">Best for: developer docs, open-source projects, headings, branding</p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function() {
+  var btns = document.querySelectorAll(".filter-btn");
+  var cards = document.querySelectorAll(".font-card");
+  btns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var cat = this.dataset.cat;
+      btns.forEach(function(b) {
+        b.className = "filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200";
+      });
+      this.className = "filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-gray-900 text-white";
+      cards.forEach(function(card) {
+        if (cat === "all" || card.dataset.cat === cat) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+})();
+</script>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-50 border-t border-gray-100 mt-24">
+    <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+      <p class="font-semibold gradient-text text-base">JustProven</p>
+      <p>&copy; 2026 JustProven. All rights reserved.</p>
+      <a href="/privacy/" class="hover:text-gray-900 transition-colors">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll-reveal
+    (function () {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+    })();
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
